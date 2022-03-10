@@ -1,16 +1,27 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import { useEffect } from "react";
 import {
   TopHeader,
-   Header
+  Header,
+  Carousal,
+  Section
 } from "../components"
 
 export default function Home() {
+  useEffect(() => {
+    import('tw-elements')
+  }, []);
+
   return (
-    <div className="h-screen bg-stone-300">
+    <div className="h-screen bg-white">
       <TopHeader />
       <Header />
+      <Section height={128}>
+        <Carousal />
+      </Section>
+      <div>
+      </div>
     </div>
   )
 }
