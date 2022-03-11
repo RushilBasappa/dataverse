@@ -1,5 +1,3 @@
-import Head from 'next/head'
-import Image from 'next/image'
 import { useEffect } from "react";
 import {
   TopHeader,
@@ -60,13 +58,19 @@ export default function Home() {
           </div>
         </div>
       </Section>
-      <Section height={64}>
-        Our Clients
-      </Section>
-      <Section height={64}>
-        Our Technologies
-      </Section>
-      <div>
+      <div className="h-64">
+        <div className="flex justify-center items-center">
+          <p className="text-2xl font-bold py-3 leading-loose">
+            Our Clients
+          </p>
+        </div>
+      </div>
+      <div className="h-64">
+        <div className="flex justify-center items-center">
+          <p className="text-2xl font-bold py-6">
+            Our Technologies
+          </p>
+        </div>
       </div>
     </div>
   )
