@@ -1,9 +1,11 @@
 import { useEffect } from "react";
 import {
-  TopHeader,
-  Header,
   Carousal,
-  Section
+  Client,
+  Header,
+  Section,
+  Technology,
+  TopHeader,
 } from "../components"
 
 export default function Home() {
@@ -58,18 +60,30 @@ export default function Home() {
           </div>
         </div>
       </Section>
-      <div className="h-64">
-        <div className="flex justify-center items-center">
-          <p className="text-2xl font-bold py-3 leading-loose">
+      <div className="h-80">
+        <div className="flex justify-center items-center flex-col h-full">
+          <p className="flex text-2xl font-bold py-3 leading-loose">
             Our Clients
           </p>
+          <div className="flex flex-grow carousel-items items-center justify-center flex-row">
+            <Client />
+            <Client />
+            <Client />
+          </div>
         </div>
       </div>
-      <div className="h-64">
-        <div className="flex justify-center items-center">
-          <p className="text-2xl font-bold py-6">
-            Our Technologies
+      <div className="h-80">
+        <div className="flex justify-center items-center flex-col h-full">
+          <p className="flex text-2xl font-bold py-3 leading-loose">
+            Our Technology
           </p>
+          <div className="flex flex-grow carousel-items items-center justify-center flex-row">
+            <Technology />
+            <Technology />
+            <Technology />
+            <Technology />
+            <Technology />
+          </div>
         </div>
       </div>
     </div>
